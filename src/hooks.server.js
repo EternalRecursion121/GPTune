@@ -15,7 +15,7 @@ function Spotify(options) {
             return {
                 id: profile.id,
                 name: profile.display_name,
-                email: profile.email,
+                email: profile?.email,
                 image: profile.images?.[0]?.url,
             };
         },

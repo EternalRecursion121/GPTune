@@ -1,4 +1,4 @@
-<script lang="js">
+<script>
     let searchBar;
     let searchActiveStyles = {
         top: '20px',

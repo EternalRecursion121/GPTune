@@ -4,7 +4,7 @@
     import Login from "$lib/components/Login.svelte"
 </script>
 
-{#if $page.data.session}
+{#if $page.data.session && !($page.data.session?.error === "RefreshAccessTokenError")}
   User is logged in
 <SearchBar/>
 {:else}
