@@ -4,10 +4,14 @@
 
 @layer components {
     .blurback{
-        @apply  bg-blurGray;
+        @apply  bg-blurGray backdrop-blur-lg;
+    }
+
+    .autogrid{
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     }
 }
   
 body{
-    @apply relative m-0 p-0 font-space bg-background-vector bg-background bg-cover bg-[right_0rem_top_2rem] bg-no-repeat flex flex-col justify-center items-center min-h-screen border-2 border-border;
+    @apply relative m-0 p-0 font-space bg-background-vector bg-background bg-cover bg-center bg-no-repeat flex flex-col justify-center items-center min-h-screen ;
 }
