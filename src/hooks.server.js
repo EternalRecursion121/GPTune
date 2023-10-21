@@ -12,10 +12,12 @@ function Spotify(options) {
         token: "https://accounts.spotify.com/api/token",
         userinfo: "https://api.spotify.com/v1/me",
         profile(profile) {
+          console.log("AGREJGKDJSGKSD")
+            console.log(profile)
             return {
                 id: profile.id,
                 name: profile.display_name,
-                email: profile?.email,
+                email: profile.email,
                 image: profile.images?.[0]?.url,
             };
         },
