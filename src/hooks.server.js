@@ -8,7 +8,7 @@ function Spotify(options) {
         id: "spotify",
         name: "Spotify",
         type: "oauth",
-        authorization: "https://accounts.spotify.com/authorize?scope=user-read-email" + encodeURIComponent(" playlist-read-private app-remote-control user-top-read playlist-modify-public playlist-modify-private streaming user-modify-playback-state"),
+        authorization: "https://accounts.spotify.com/authorize?scope=user-read-email" + encodeURIComponent(" playlist-read-private app-remote-control user-top-read playlist-modify-public playlist-modify-private user-modify-playback-state"),
         token: "https://accounts.spotify.com/api/token",
         userinfo: "https://api.spotify.com/v1/me",
         profile(profile) {

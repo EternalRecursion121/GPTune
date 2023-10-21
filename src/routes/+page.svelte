@@ -5,7 +5,7 @@
 </script>
 
 {#if $page.data.session && !($page.data.session?.error === "RefreshAccessTokenError")}
-  User is logged in
+  <!-- User is logged in -->
 <SearchBar/>
 <!-- {:else} -->
   <!-- <Login /> -->
