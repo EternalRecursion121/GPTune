@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+    @apply bg-background bg-['url('$lib\assets\background-vector.svg')'];
+}
