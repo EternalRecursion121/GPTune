@@ -1,7 +1,8 @@
 import { MongoClient } from "mongodb"
 import { MONGODB_URI } from "$env/static/private"
+import { dev } from "$app/environment"
 
-if (MONGODB_URI) {
+if (!MONGODB_URI) {
   throw new Error('Invalid/Missing environment variable: "MONGODB_URI"')
 }
 
@@ -11,7 +12,7 @@ const options = {}
 let client
 let clientPromise
 
-if (process.env.NODE_ENV === "development") {
+if (dev) {
   // In development mode, use a global variable so that the value
   // is preserved across module reloads caused by HMR (Hot Module Replacement).
   if (!global._mongoClientPromise) {
