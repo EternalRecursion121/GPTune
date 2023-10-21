@@ -8,7 +8,7 @@ function Spotify(options) {
         id: "spotify",
         name: "Spotify",
         type: "oauth",
-        authorization: "https://accounts.spotify.com/authorize?scope=user-read-email" + encodeURIComponent(" user-top-read"),
+        authorization: "https://accounts.spotify.com/authorize?scope=user-read-email",
         token: "https://accounts.spotify.com/api/token",
         userinfo: "https://api.spotify.com/v1/me",
         profile(profile) {
