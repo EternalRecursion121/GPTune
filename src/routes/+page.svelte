@@ -4,9 +4,9 @@
     import Login from "$lib/components/Login.svelte"
 </script>
 
-<!-- {#if $page.data.session} -->
-  <!-- User is logged in -->
+{#if $page.data.session}
+  User is logged in
 <SearchBar/>
-<!-- {:else} -->
-  <!-- <Login /> -->
-<!-- {/if} -->
+{:else}
+  <Login />
+{/if}
