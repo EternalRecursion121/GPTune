@@ -30,7 +30,6 @@ export const handle = SvelteKitAuth({
     Spotify({ 
       clientId: SPOTIFY_ID, 
       clientSecret: SPOTIFY_SECRET, 
-      authorization: {params: { scope: "playlist-read-private app-remote-control user-top-read playlist-modify-public playlist-modify-private streaming user-modify-playback-state" } } 
     })
   ], 
   adapter: MongoDBAdapter(clientPromise)
